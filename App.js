@@ -38,9 +38,11 @@ function showresults(data) {
       let image = document.createElement('img')
       let title = document.createElement('p')
       let contentdiv = document.createElement('div')
+      let imagediv=document.createElement('div')
 
       maindiv.append(contentdiv)
-      contentdiv.append(image)
+      contentdiv.append(imagediv)
+      imagediv.append(image)
       contentdiv.append(title)
 
       item.poster_path ?
@@ -52,6 +54,7 @@ function showresults(data) {
       image.classList.add('image')
       title.classList.add('title')
       contentdiv.classList.add('contentdiv')
+      imagediv.classList.add('imagediv')
 
       fetch("https://api.themoviedb.org/3/movie/" +
         item.id +

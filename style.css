@@ -42,41 +42,78 @@ text-align: center;
     color: rgb(26, 25, 25);
     /* font-size: 1.1rem; */
  }
- .image{
-  height: 40vh; 
-  width: 40vw;
-  border-radius: 10px 10px 0 0;
- }
+
  .moviecontainer{
    margin-top: 4rem;
    margin-inline: 2rem;
  }
-
- .movies{
+.movies{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
 
  }
-
  .contentdiv{
-    display: flex;
-    flex-direction: column;
+   display: flex;
+   flex-direction: column;
     align-items: center;
-    gap: 10px;
-    justify-content: center;
-    border: 1px solid rgb(253, 250, 250);
-    background-color: rgba(13, 13, 14, 0.02);
-    box-shadow: 2px 2px 10px  rgb(148, 148, 148);
-    border-radius: 10px;
+   gap: 10px;
+   /* justify-content: center; */
+   border: 1px solid rgb(253, 250, 250);
+   background-color: rgba(13, 13, 14, 0.02);
+   box-shadow: 2px 2px 10px  rgb(148, 148, 148);
+   border-radius: 10px;
+   height: 60vh;
+   width: 20vw;
+  overflow: hidden;   
+ 
+}
+.contentdiv:hover{
+   
+   cursor: pointer;
+   transition: ease-in-out 0.3s ;
+   transform:scale(1.04)
+}
+
+ .imagediv{ 
+  height: 70%; 
+  width: 100%;
+  border-radius: 0;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  
  }
- .contentdiv:hover{
-    
-    cursor: pointer;
-    transition: ease-in-out 0.3s ;
-    transform:scale(1.04)
+ .imagediv img{
+   width: 100%;
+   height: 100%;
+   size: cover;
+   
+  
+  
  }
+ .trailer{
+   border: 1px solid rgb(253, 248, 248);
+   /* padding: 2px 2px; */
+   border-radius: 10px;
+   background-color: rgb(253, 248, 248 ,0.9) ;
+   margin-bottom: 2rem;
+   font-size: 1.1rem;
+   font-weight: 600;
+   width: 30%;
+   text-align: center;
+}
+.trailer:hover{
+   background-color: rgb(253, 248, 248 ,0.2);
+   color: white;
+   transition: ease-in-out 0.3s;
+
+}
+
+ 
+
+
 
  .title{
     padding-top: 0.5rem;
@@ -84,6 +121,7 @@ text-align: center;
     font-weight: 900;
     color:rgb(244, 7, 7); 
     font-family: 'Bebas Neue', cursive;
+    text-align: center;
   
  }
 
@@ -95,21 +133,7 @@ color: rgb(239, 6, 6);
    color: white;
    transition: ease-in-out 0.3s;
 }
-.trailer{
-   border: 1px solid rgb(253, 248, 248);
-   padding: 2px 12px;
-   border-radius: 10px;
-   background-color: rgb(253, 248, 248 ,0.9) ;
-   margin-bottom: 2rem;
-   font-size: 1.1rem;
-   font-weight: 600;
-}
-.trailer:hover{
-   background-color: rgb(253, 248, 248 ,0.2);
-   color: white;
-   transition: ease-in-out 0.3s;
 
-}
 
  @media (max-width:567px){
 
